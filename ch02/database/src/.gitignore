@@ -1,0 +1,6 @@
+# vertual env 
+.venv
+
+# database relate
+db.sqlite3
+migrations
