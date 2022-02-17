@@ -2,5 +2,18 @@ version: '3.9'
 
 services:
   web:
+    build: database/.
     volumes:
       - ./database/src:/code
+    ports:
+      - 8001:8000
+    networks:
+      - dev-network
+
+  db:
+    networks:
+      - dev-network 
+
+networks:
+  dev-network:
+    driver: bridge
