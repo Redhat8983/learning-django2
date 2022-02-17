@@ -4,8 +4,6 @@ services:
   web:
     build: database/.
     command: python /code/manage.py runserver 0.0.0.0:8000
-    volumes:
-      - ./database/src:/code
     environment:
       - POSTGRES_NAME=postgres
       - POSTGRES_USER=postgres
