@@ -1,0 +1,21 @@
+version: '3.9'
+
+services:
+  web:
+    build: bookstore/.
+    volumes:
+      - ./bookstore/src:/code
+    ports:
+      - 8001:8000
+    networks:
+      - dev-network
+
+  db:
+    volumes:
+      - ./postgres_data:/var/lib/postgresql/data/
+    networks:
+      - dev-network
+
+networks:
+  dev-network:
+    driver: bridge
