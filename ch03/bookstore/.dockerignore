@@ -7,5 +7,5 @@
 */.git
 */.gitignore
 
-# database
+# database test
 */db.sqlite3
