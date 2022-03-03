@@ -1,0 +1,28 @@
+# Ch04 Bookstore: Create Pages App
+
+## 1. Create App
+
+- With `startapp pages` to create new app.
+- Update `INSTALL_APP` in `setting.py`
+- Setting up `TEMPLATES` in `setting.py`
+
+## 2. Template
+
+In This case, we create two template `_base.html` and `home.html`
+
+You can check detail in codes, or previews notebook.
+
+## 3. URLs and Views
+
+- Same steps update `project/urls.py` and `app/urls.py`
+- For views, use basic `TemplateView` to show basic.
+
+## 4. Test and setUp Method
+
+- Work base test step by step with books
+- use setUp method to avoid DRY codes
+- Understand the test algorithm
+
+## Conclusion
+
+In this chapter, we added the first page to project, a basic homepage. We also add tests which should always be included with new code changes.
