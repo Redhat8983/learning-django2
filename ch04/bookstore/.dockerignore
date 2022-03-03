@@ -1,0 +1,11 @@
+
+# Environments
+*/.env
+*/.venv
+
+# git 
+*/.git
+*/.gitignore
+
+# database test
+*/db.sqlite3
